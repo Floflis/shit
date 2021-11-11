@@ -1,3 +1,9 @@
 Same as the sh used when downloading .sh URLs
 
 But using IPFS
+
+`shit <URL.sh>`
+```bash
+wget $2 /tmp/shit.sh
+sh /tmp/./shit.sh
+```
