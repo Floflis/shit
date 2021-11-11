@@ -1,6 +1,16 @@
 # Sh it!
 
-Like a classical `curl URL | sh`, but faster and safer.
+Like a classical `curl URL | sh`, but safer and faster.
+
+----
+
+# Installing
+
+Open terminal on sh it folder (that you git clonned or downloaded), and type following by pressing `[ENTER]`:
+
+```sh
+chmod +x install.sh && sh ./install.sh
+```
 
 ----
 
