@@ -4,6 +4,7 @@ But using IPFS
 
 shit stands for "sh it", but honestly the objective is the fun name (despite paradoxically it was made focused on IPFS)
 Purpose: tell how shitty it is to install a .sh script directly from a URL you found somewhere
+But its less shitty than `curl URL.sh | sh`
 
 `shit <URL.sh>`
 ```bash
