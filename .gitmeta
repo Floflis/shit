@@ -1,0 +1,4 @@
+chown -h 1000:1000 './.gitmeta'
+chmod 0664 './.gitmeta'
+/usr/bin/touch -hcmd "2021-11-10 21:22:40.5126715870 -0300" './.gitmeta'
+/usr/bin/touch -hcad "2021-11-10 21:22:15.7965315970 -0300" './.gitmeta'
