@@ -3,6 +3,7 @@ Same as the sh used when downloading .sh URLs
 But using IPFS
 
 shit stands for "sh it", but honestly the objective is the fun name (despite paradoxically it was made focused on IPFS)
+Purpose: tell how shitty it is to install a .sh script directly from a URL you found somewhere
 
 `shit <URL.sh>`
 ```bash
