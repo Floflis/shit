@@ -2,6 +2,8 @@ Same as the sh used when downloading .sh URLs
 
 But using IPFS
 
+shit stands for "sh it", but honestly the objective is the fun name (despite paradoxically it was made focused on IPFS)
+
 `shit <URL.sh>`
 ```bash
 wget $2 /tmp/shit.sh
