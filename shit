@@ -1,13 +1,65 @@
-Same as the sh used when downloading .sh URLs
+#!/bin/sh -e
 
-But using IPFS
+if [ "$1" != "" ]
+   then
+      if [ "${#1}" -gt "46" ] || [ "${#1}" -lt "46" ] ; then
+          if [ "${#1}" -gt "59" ] || [ "${#1}" -lt "59" ] ; then
+             echo "This is not a valid IPFS CID..."
+             exit 1
+fi
+fi
 
-shit stands for "sh it", but honestly the objective is the fun name (despite paradoxically it was made focused on IPFS)
-Purpose: tell how shitty it is to install a .sh script directly from a URL you found somewhere
-But its less shitty than `curl URL.sh | sh`
-
-`shit <URL.sh>`
-```bash
-wget $2 /tmp/shit.sh
-sh /tmp/./shit.sh
-```
+      if [ "${#1}" = "46" ] ; then
+         base32=""
+fi
+      if [ "${#1}" = "59" ] ; then
+         base32=" | ipfs cid base32"
+fi
+      
+      echo "Downloading your script..."
+      #curl --proto '=https' --tlsv1.2 -sSf $1 >> /tmp/shit.sh
+      #ipget --progress $1 -o /tmp/shit.sh
+      #curl --proto '=https' --tlsv1.2 -sSf https://ipfs.io/ipfs/$1 >> /tmp/shit.sh
+      curl --proto '=https' -sSf https://ipfs.io/ipfs/$1 >> /tmp/shit.sh
+      echo "Checking for file integrity..."
+         if [ "$(ipfs add -q --only-hash /tmp/shit.sh$base32)" = "$1" ]
+            then
+               echo "CID/Hash is the same from requested and the downloaded file, so the download is ok."
+               echo "Watch out! It can bite your bytes! 👇 Please review it:"
+               echo "----------------------------------------"
+               cat /tmp/shit.sh
+               if [ x$DISPLAY != x ] ; then
+                  gedit /tmp/shit.sh
+#                  echo "GUI Enabled"
+#               else
+#                  echo "GUI Disabled"
+fi
+               echo "----------------------------------------"
+               echo "👆 Above, did you reviewed how this script works? Do you want to execute your script? [Y/n]"
+               read proceedinstall
+               case $proceedinstall in
+                  [nN])
+                     exit
+                     break ;;
+                  [yY])
+                     echo "Executing your script..."
+                     sh /tmp/./shit.sh
+                     rm -f /tmp/shit.sh
+                     exit 0
+                     break ;;
+                  *)
+                     echo "${invalid}" ;;
+esac
+            else
+               echo "Requested CID/Hash $1 is different from the result: $(ipfs add -q --only-hash /tmp/shit.sh$base32). Your download is corrupt. Please try again."
+fi
+   else
+      echo "Welcome to sh it! Sorry for the name 💩"
+      echo "Purpose: tell how shitty it is to install a .sh script directly from a URL you found from a random troll somewhere"
+      echo "But at least its less shitty than 'curl URL.sh | sh' Sorry Rust lang"
+      echo "----"
+      echo "How to use:"
+      echo "shit <IPFS-CID>"
+      echo "Example, to install Rust:"
+      echo "shit QmVoGaTVUVzgHEwyyiKsYcQG36AFZezb1kvGEFPwYsyN92"
+fi
