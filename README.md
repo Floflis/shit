@@ -38,6 +38,8 @@ Example, to install Rust:
 
 # About
 
+"shit" is a portmanteau between "sh" and "it" (let's sh it).
+
 Sorry for the name 💩
 
 Nomenclature's purpose: tell how shitty it is to install a .sh script directly from a URL you found from a random potential troll somewhere

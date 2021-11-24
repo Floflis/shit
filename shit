@@ -55,7 +55,8 @@ esac
 fi
    else
       echo "Welcome to sh it! Sorry for the name 💩"
-      echo "Purpose: tell how shitty it is to install a .sh script directly from a URL you found from a random troll somewhere"
+      echo '"shit" is a portmanteau between "sh" and "it" (lets sh it).'
+      echo "Purpose: tell how shitty it is to install a .sh script directly from a URL you found from a random potential troll somewhere"
       echo "But at least its less shitty than 'curl URL.sh | sh' Sorry Rust lang"
       echo "----"
       echo "How to use:"
