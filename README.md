@@ -8,7 +8,7 @@ Like a classical `curl URL | sh`, but safer and faster.
 
 ## Easy (option 1)
 
-Open the Withcraft/Terminal/Prompt and type+ press `[ENTER]`:
+Open the Withcraft/Terminal/Prompt and type + press `[ENTER]`:
 
 ```sh
 curl --proto '=https' --tlsv1.3 -sSf https://raw.githubusercontent.com/Floflis/shit/main/install.sh | sh
