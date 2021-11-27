@@ -8,7 +8,7 @@ Like a classical `curl URL | sh`, but safer and faster.
 
 ## Easy
 
-Open the Withcraft/Terminal/Prompt and type+Enter:
+Open the Withcraft/Terminal/Prompt and type+ press `[ENTER]`:
 
 ```sh
 curl --proto '=https' --tlsv1.3 -sSf https://raw.githubusercontent.com/Floflis/shit/main/install.sh | sh
@@ -16,10 +16,18 @@ curl --proto '=https' --tlsv1.3 -sSf https://raw.githubusercontent.com/Floflis/s
 
 ## Locally
 
-Open terminal on sh it folder (that you git clonned or downloaded), and type following by pressing `[ENTER]`:
+Open terminal and type following by pressing `[ENTER]`:
 
 ```sh
-chmod +x install.sh && sh ./install.sh
+
+```
+
+### Don't have sh it locally?
+
+Type:
+
+```sh
+git clone https://github.com/Floflis/shit.git && cd shit && chmod +x install.sh && sh ./install.sh
 ```
 
 ----
