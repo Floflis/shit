@@ -18,14 +18,12 @@ curl --proto '=https' --tlsv1.3 -sSf https://raw.githubusercontent.com/Floflis/s
 
 Open terminal and type following by pressing `[ENTER]`:
 
+### Floflis, Floflis-based distros such as UniOS and any other that uses [nu shell](https://github.com/nushell/nushell):
 ```sh
-
+git clone https://github.com/Floflis/shit.git ; cd shit ; chmod +x install.sh ; sh ./install.sh
 ```
 
-### Don't have sh it locally?
-
-Type:
-
+### Any other *nix distro (Ubuntu/Arch/MacOS/etc):
 ```sh
 git clone https://github.com/Floflis/shit.git && cd shit && chmod +x install.sh && sh ./install.sh
 ```
