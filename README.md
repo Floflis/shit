@@ -21,12 +21,12 @@ If you don't trust downloading+executing a script, you can do it locally.
 Open terminal and type following by pressing `[ENTER]`:
 
 ### Floflis, Floflis-based distros such as UniOS and any other that uses [nu shell](https://github.com/nushell/nushell):
-```sh
+```nu
 git clone https://github.com/Floflis/shit.git ; cd shit
 ```
 
 After reviewing the code of install.sh:
-```sh
+```nu
 chmod +x install.sh ; sh ./install.sh
 ```
 
