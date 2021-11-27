@@ -6,6 +6,16 @@ Like a classical `curl URL | sh`, but safer and faster.
 
 # Installing
 
+## Easy
+
+Open the Withcraft/Terminal/Prompt and type+Enter:
+
+```sh
+curl --proto '=https' --tlsv1.3 -sSf https://raw.githubusercontent.com/Floflis/shit/main/install.sh | sh
+```
+
+## Locally
+
 Open terminal on sh it folder (that you git clonned or downloaded), and type following by pressing `[ENTER]`:
 
 ```sh
