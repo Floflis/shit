@@ -6,7 +6,7 @@ Like a classical `curl URL | sh`, but safer and faster.
 
 # Installing
 
-## Easy
+## Easy (option 1)
 
 Open the Withcraft/Terminal/Prompt and type+ press `[ENTER]`:
 
@@ -14,18 +14,31 @@ Open the Withcraft/Terminal/Prompt and type+ press `[ENTER]`:
 curl --proto '=https' --tlsv1.3 -sSf https://raw.githubusercontent.com/Floflis/shit/main/install.sh | sh
 ```
 
-## Locally
+## Locally (option 2)
+
+If you don't trust downloading+executing a script, you can do it locally.
 
 Open terminal and type following by pressing `[ENTER]`:
 
 ### Floflis, Floflis-based distros such as UniOS and any other that uses [nu shell](https://github.com/nushell/nushell):
 ```sh
-git clone https://github.com/Floflis/shit.git ; cd shit ; chmod +x install.sh ; sh ./install.sh
+git clone https://github.com/Floflis/shit.git ; cd shit
 ```
+
+After reviewing the code of install.sh:
+```sh
+chmod +x install.sh ; sh ./install.sh
+```
+
 
 ### Any other *nix distro (Ubuntu/Arch/MacOS/etc):
 ```sh
-git clone https://github.com/Floflis/shit.git && cd shit && chmod +x install.sh && sh ./install.sh
+git clone https://github.com/Floflis/shit.git && cd shit
+```
+
+After reviewing the code of install.sh:
+```sh
+chmod +x install.sh && sh ./install.sh
 ```
 
 ----
