@@ -30,6 +30,7 @@ fi
                cat /tmp/shit.sh
                if [ x$DISPLAY != x ] ; then
                   gedit /tmp/shit.sh
+                  #IMPORTANT: later use /media/daniella/B/git/Floflis/Utilities/app-selector/app-selector-notepad
 #                  echo "GUI Enabled"
 #               else
 #                  echo "GUI Disabled"
