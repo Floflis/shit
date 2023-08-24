@@ -69,6 +69,8 @@ Example, to install Rust:
 
 "shit" is a portmanteau between "sh" and "it" (let's sh it).
 
+A portmanteau isn't a shit; but shit is a portmanteau.
+
 Sorry for the name 💩
 
 Nomenclature's purpose: tell how shitty it is to install a .sh script directly from a URL you found from a random potential troll somewhere
